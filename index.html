@@ -8,17 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
     body {
         background-color: rgb(77, 23, 163);
         color: aliceblue;
         font-family: 'Poppins', sans-serif;
     }
-
     nav {
         display: flex;
         justify-content: center;
@@ -26,60 +25,52 @@
         height: 90px;
         background-color: black;
     }
-
     nav ul {
         display: flex;
         justify-content: center;
     }
-
     nav ul li {
         list-style: none;
         margin: 0 23px;
     }
-
-    nav ul li a{
+    nav ul li a {
         text-decoration: none;
         color: white;
     }
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: rgb(160, 160, 244);
         font-size: 1.4rem;
     }
-
     .left {
         font-size: 1.5rem;
     }
-
     .firstSection {
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin: 180px 0;
     }
-
-    .firstSection > div{
+    .firstSection > div {
         width: 30%;
     }
-
     .leftSection {
         font-size: 3rem;
         margin: 70px 0;
     }
-
-    .rightSection img{
-        width: 80%;
+    .rightSection img {
+        width: 60%;
         margin: 50px 0;
     }
-    .purple{
+    .purple {
         color: rgb(16, 85, 189);
     }
-    .text-gray{
+    .text-gray {
         color: gray;
     }
-    #element{
+    #element {
         color: rgb(16, 85, 189);
     }
-    .secondSection{
+    .secondSection {
         max-width: fit-content;
         margin: auto;
         height: 80vh;
@@ -87,7 +78,136 @@
     .secondSection h1 {
         font-size: 50px;
     }
+    .thirdSection {
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+.thirdSection {
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+.thirdSection h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.document {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.document a {
+    text-decoration: none;
+}
+
+.document-box {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.document-box:hover {
+    transform: translateY(-5px);
+    background-color: rgb(77, 23, 163);
+}
+
+.document-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.document-details {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.document-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.document-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+.contactSection {
+        background-color: #856fe6;
+        padding: 80px 0;
+    }
+
+    .contactSection .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contactSection h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .contact-details {
+        flex: 1;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .address h3,
+    .contacts h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .address p,
+    .contacts p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .map {
+        flex: 1;
+        margin-left: 40px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 400px;
+        border: 0;
+    }
+
+    .conclusion {
+        background-color: #333333;
+        color: #ffffff;
+        padding: 80px 0;
+    }
+
+    .conclusion .container {
+        text-align: center;
+    }
+
+    .conclusion h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .conclusion p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
 </style>
+
 </head>
 <body>
     <header>
@@ -120,7 +240,6 @@
     <section class="secondSection">
         <span class="text-gray">What I have done so far</span>
         <h1> Work  Experience</h1>
-        
         <div class="box" style="
         background: white;
         width: 80vw;
@@ -128,16 +247,112 @@
         margin: 28px;
         "
         ></div>
-
+         <ul>
+                <li>
+                    <h3>Company Name</h3>
+                    <p>Position: Web Developer</p>
+                    <p>Date: January 2020 - Present</p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et elit et nisl feugiat tempor.</p>
+                </li>
+                <li>
+                    <h3>Company Name</h3>
+                    <p>Position: Graphic Designer</p>
+                    <p>Date: September 2018 - December 2019</p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et elit et nisl feugiat tempor.</p>
+                </li>
+                <li>
+                    <h3>Company Name</h3>
+                    <p>Position: Content Writer</p>
+                    <p>Date: June 2016 - August 2018</p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et elit et nisl feugiat tempor.</p>
+                </li>
+            </ul>
     </section>
+    <section class="thirdSection">
+        <h2>My Documents</h2>
+        <div class="document">
+            <a href="/path/to/document1.pdf" target="_blank">
+                <div class="document-box">
+                    <img src="/path/to/document1-thumbnail.jpg" alt="Document 1 Thumbnail">
+                    <div class="document-details">
+                        <h3>Document 1</h3>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="document">
+            <a href="/path/to/document2.pdf" target="_blank">
+                <div class="document-box">
+                    <img src="/path/to/document2-thumbnail.jpg" alt="Document 2 Thumbnail">
+                    <div class="document-details">
+                        <h3>Document 2</h3>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Add more documents here -->
+    </section>
+    <section class="contactSection">
+        <div class="container">
+            <div class="contact-details">
+                <h2>Contact Us</h2>
+                <div class="logo">
+                    <img src="/path/to/logo.png" alt="Company Logo">
+                </div>
+                <div class="address">
+                    <h3>Address</h3>
+                    <p>123 Main Street<br>City, State<br>Country</p>
+                </div>
+                <div class="contacts">
+                    <h3>Contacts</h3>
+                    <p>Email: Soumyachakraborty198181@gmail.com<br>Phone: +91 8910927312<br>Fax: +1 234 567 891</p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe width="450" height="250" frameborder="10" style="border:10px"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/MAP_MODE?key=YOUR_API_KEY"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="conclusion">
+        <div class="container">
+            <!-- ...existing code... -->
+        </div>
+    </section>
+
 </main>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<!-- Setup and start animation! -->
 <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Graphic Designer','Web Designer' ],
-      typeSpeed: 50,
+        strings: ['Web Developer', 'Graphic Designer', 'Content Writer'],
+        typeSpeed: 30,
     });
-  </script>
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2JqULSRTe1_Amep_hsTXNKABzxcfGuK0" async defer></script>
+<script>
+    function initMap() {
+        var location = { lat: 40.7128, lng: -74.0060 }; // Replace with your company's location coordinates
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: location,
+            zoom: 15 // Adjust the zoom level as needed
+        });
+
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: 'Company Location' // Replace with a custom marker title
+        });
+    }
+
+    // Call the initMap() function to initialize the map
+    initMap();
+</script>
 </body>
+
 </html>
