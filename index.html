@@ -121,24 +121,6 @@ nav ul li a:hover {
     }
 }
 
-.slide-left {
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
-}
-
-.slide-right {
-    transform: translateX(100%);
-    transition: transform 0.5s ease;
-}
-
-li:hover .slide-left {
-    transform: translateX(0);
-}
-
-li:hover .slide-right {
-    transform: translateX(0);
-}
-
 .box {
     background: white;
     width: 80vw;
@@ -180,6 +162,14 @@ li:hover .slide-right {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.secondSection {
+  margin-bottom: 2rem;
+}
+
+.my-open-source-projects {
+  margin-top: 2rem;
 }
 
 @keyframes color-rotate {
@@ -286,6 +276,10 @@ li:hover .slide-right {
     line-height: 1.5;
 }
 
+.section-gap {
+  margin-bottom: 2.5rem; /* Adjust the desired space between sections */
+}
+
 </style>
 
 </head>
@@ -323,25 +317,26 @@ li:hover .slide-right {
     <div class="box scale-animation"></div>
     <ul>
         <li class="fade-in">
-            <h3 class="slide-left">Company Name</h3>
-            <p class="slide-right">Position: Web Developer</p>
-            <p class="slide-left">Date: January 2020 - Present</p>
-            <p class="slide-right">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et elit et nisl feugiat tempor.</p>
+            <h3>Self Employed</h3>
+            <p>Position: Web Developer</p>
+            <p>Date: January 2023 - Present</p>
+            <p>Description: Got projects from various small stores of sarees, grocery, and many others</p>
         </li>
         <li class="fade-in">
-            <h3 class="slide-left">Company Name</h3>
-            <p class="slide-right">Position: Graphic Designer</p>
-            <p class="slide-left">Date: September 2018 - December 2019</p>
-            <p class="slide-right">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et elit et nisl feugiat tempor.</p>
+            <h3>Self Employed</h3>
+            <p>Position: Graphic Designer</p>
+            <p>Date: January 2023 - Present</p>
+            <p>Description: Designed various frontend websites given to us</p>
         </li>
         <li class="fade-in">
-            <h3 class="slide-left">Company Name</h3>
-            <p class="slide-right">Position: Content Writer</p>
-            <p class="slide-left">Date: June 2016 - August 2018</p>
-            <p class="slide-right">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et elit et nisl feugiat tempor.</p>
+            <h3>Noob Code</h3>
+            <p>Position: Content Writer</p>
+            <p>Date: January 2023 - Till date</p>
+            <p>Description: Used to write on various coding languages and coding skills for students</p>
         </li>
     </ul>
 </section>
+
 <section class="my-open-source-projects">
     <h2 class="animated-text">My Open Source Projects</h2>
     <ul>
@@ -411,6 +406,35 @@ li:hover .slide-right {
         strings: ['Web Developer', 'Graphic Designer', 'Frontend Developer'],
         typeSpeed: 30,
     });
+</script>
+
+<script>
+    // Get the animated section element
+const animatedSection = document.querySelector('.fade-in', 'my-open-source-projects');
+
+// Function to check if the element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+  if (isInViewport(animatedSection)) {
+    animatedSection.classList.add('animate');
+    // Remove the scroll event listener after the animation is applied
+    window.removeEventListener('scroll', handleScroll);
+  }
+}
+
+// Add the scroll event listener
+window.addEventListener('scroll', handleScroll);
+
 </script>
 
 </body>
