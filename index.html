@@ -87,6 +87,15 @@ nav ul li a:hover {
 .text-gray {
     color: gray;
 }
+    
+    #hire-us-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 
 #element {
     color: rgb(16, 85, 189);
@@ -309,6 +318,7 @@ nav ul li a:hover {
             <span id="element"></span>
         </div>
         <div class="rightSection">
+            <button id="hire-us-button">Hire Us</button>
             <img src="C:\Users\soumy\Dev.gif" alt="Description of the image">
         </div>
     </section>
@@ -439,5 +449,19 @@ window.addEventListener('scroll', handleScroll);
 
 </script>
 
+    <script>
+document.getElementById('hire-us-button').addEventListener('click', function() {
+  var emailAddress = 'soumyachakraborty198181@gmail.com';
+  var subject = 'Hiring Inquiry';
+  var emailBody = 'Hello,\n\nI am interested in discussing a potential job opportunity. Can we schedule a meeting to discuss further?\n\nBest regards,';
+  
+  var mailtoUrl = 'mailto:' + encodeURIComponent(emailAddress) +
+                  '?subject=' + encodeURIComponent(subject) +
+                  '&body=' + encodeURIComponent(emailBody);
+  
+  window.location.href = mailtoUrl;
+});
+    </script>
+    
 </body>
 </html>
